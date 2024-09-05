@@ -1,0 +1,10 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#electric').click(function () {
+            $.post('/check_mood', {}, function (data) {
+                alert(data.message);
+            });
+        });
+    });
+</script>
